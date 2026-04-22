@@ -1,0 +1,5 @@
+基础面试题链接：
+https://www.yuque.com/zhaoss-0qeg4/yerccx/ru490qxcgqgpgokf?singleDoc# 《Java基础阶段面试题》
+
+集合相关：
+https://www.yuque.com/zhaoss-0qeg4/yerccx/fp06a6eboieixk6m?singleDoc# 《Java基础面试题配套资源 - 集合相关》

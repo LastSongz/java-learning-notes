@@ -1,0 +1,107 @@
+cd到jvm-tuning-demo目录下
+
+./scripts/demo.sh
+
+-----------------------------------------
+1、常用参数
+
+# 堆大小
+-Xms512m -Xmx512m
+
+# 年轻代大小
+-XX:NewRatio=2        # 新生代:老年代 = 1:2
+-XX:SurvivorRatio=8   # Eden:Survivor = 8:1
+
+# GC选择
+-XX:+UseSerialGC      # 串行GC
+-XX:+UseParallelGC    # 并行GC (JDK8默认)
+-XX:+UseConcMarkSweepGC # CMS
+-XX:+UseG1GC          # G1 (JDK9+默认)
+-XX:+UseZGC           # ZGC (JDK11+)
+
+# G1特有
+-XX:MaxGCPauseMillis=200
+-XX:G1HeapRegionSize=8m
+
+
+-----------------------------------------
+2、如何排查线上OOM问题？
+
+# 1. 首先保留现场（如果程序还在）
+jps -l                           # 找到进程PID
+jmap -heap <PID>                 # 查看堆配置
+jmap -histo <PID> | head -30     # 查看对象统计
+
+# 2. 导出堆转储
+jmap -dump:format=b,file=heap.hprof <PID>
+
+# 3. 分析堆转储
+jhat heap.hprof                  # HTTP服务查看
+MAT heap.hprof                 # 使用Eclipse Memory Analyzer
+ 或者在windows系统visualvm查看 
+
+# 4. 查看代码
+# 重点关注:
+# - 内存泄漏 (static集合持有引用)
+# - 大对象分配
+# - 线程创建过多
+
+-----------------------------------------
+3: CPU 100%怎么排查？
+
+# 1. 定位CPU占用最高的进程
+top -c
+
+# 2. 定位CPU占用最高的线程
+top -H -p <PID>
+
+# 3. 线程ID转16进制
+printf "%x\n" <线程ID>
+
+# 4. 查看线程堆栈
+jstack <PID> > threaddump.log
+grep -A 20 "nid=0x<16进制>" threaddump.log
+
+-----------------------------------------
+4、 频繁Full GC怎么排查？
+
+# 1. 查看GC日志
+grep "Full GC" gc.log | head -20
+
+# 2. 分析GC原因
+# - 老年代空间不足
+# - 元空间不足
+# - System.gc()调用
+# - 分配担保失败
+
+# 3. 内存分析
+jmap -heap <PID>
+
+-----------------------------------------
+4、 线上服务响应变慢，如何快速定位？
+
+# 1. 系统层面
+top                              # CPU/内存
+iostat -x 1                     # IO
+netstat -an | grep ESTABLISHED  # 网络连接
+
+# 2. Java层面
+jstack <PID>                    # 线程堆栈
+jstat -gcutil <PID> 1000        # GC统计
+jmap -heap <PID>                # 内存状态
+
+# 3. 数据库层面 (如果适用)
+show processlist               # MySQL
+
+
+
+8、JVM参数怎么调优？能举例说明吗？
+
+1、吞吐量优先：(G1垃圾回收器)
+   -Xms4g   -Xmx4g
+   -XX: ParallelGCThreads =8
+   
+   
+2、延迟优先： 触发的时机。
+
+3、大堆，超低的延迟 ZGC
