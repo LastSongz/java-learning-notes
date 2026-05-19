@@ -1,3 +1,14 @@
+---
+title: "项目一-DDD架构重构"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/面试
+  - 分类/架构
+status: complete
+category: career
+---
+
 # 项目一：海思供应链交付系统 - DDD 架构重构
 
 > **系统设计与后端开发 | 2024.05-至今**

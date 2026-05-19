@@ -1,6 +1,15 @@
 ---
+title: "Harness核心概念详解"
 created: 2026-04-26
-tags: #devops #harness #ci-cd #核心概念 #pipeline #delegate #canary
+updated: 2026-05-19
+tags:
+  - 分类/devops
+  - 主题/harness
+  - 主题/ci-cd
+  - 核心概念
+  - 主题/pipeline
+status: complete
+category: devops
 ---
 
 # Harness 核心概念详解

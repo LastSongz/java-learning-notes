@@ -1,3 +1,13 @@
+---
+title: "训练过程-预训练到RLHF"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/ai
+status: complete
+category: ai
+---
+
 # 06 - 训练过程：预训练到 RLHF
 
 > 第二阶段 · 第3课 | 2026-05-06

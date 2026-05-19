@@ -1,3 +1,15 @@
+---
+title: "MYSQL面试突击-分库分表"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/数据库
+  - 分类/面试
+  - 主题/分库分表
+status: complete
+category: database
+---
+
 # MYSQL面试突击---分库分表
 
 ## 1、什么是分库分表？为什么要做分库分表？

@@ -1,6 +1,15 @@
 ---
+title: "MOC-Harness与DevOps"
 created: 2026-04-26
-tags: #moc #devops #harness #ci-cd #面试 #状态/已整理
+updated: 2026-05-19
+tags:
+  - 类型/moc
+  - 分类/devops
+  - 主题/harness
+  - 主题/ci-cd
+  - 分类/面试
+status: complete
+category: devops
 ---
 
 # MOC: Harness 与 DevOps 平台

@@ -1,3 +1,14 @@
+---
+title: "ThoughtWorks Developer 岗位信息"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/面试
+  - thoughtworks
+status: complete
+category: career
+---
+
 Developer
 
 深圳、西安、成都、武汉

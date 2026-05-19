@@ -1,3 +1,15 @@
+---
+title: "AI-ML工程化"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/ai
+  - 主题/ml
+  - 主题/工程化
+status: complete
+category: ai
+---
+
 # AI-ML工程化
 
 > 将机器学习模型可靠地部署到生产环境

@@ -1,3 +1,15 @@
+---
+title: "RAG落地实战"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/ai
+  - 分类/面试
+  - 主题/rag
+status: complete
+category: ai
+---
+
 # 18 - RAG 落地实战
 
 > AI项目面试专题 | 面向简历：「实现基于wiki知识库的用户意图理解」

@@ -1,3 +1,15 @@
+---
+title: "MySQL执行计划"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/数据库
+  - 主题/执行计划
+  - 优化
+status: complete
+category: database
+---
+
 # mysql执行计划
 
 ​       在企业的应用场景中，为了知道优化SQL语句的执行，需要查看SQL语句的具体执行过程，以加快SQL语句的执行效率。

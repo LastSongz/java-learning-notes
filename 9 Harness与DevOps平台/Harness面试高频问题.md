@@ -1,6 +1,14 @@
 ---
+title: "Harness面试高频问题"
 created: 2026-04-26
-tags: #devops #harness #面试 #ci-cd #速查
+updated: 2026-05-19
+tags:
+  - 分类/devops
+  - 主题/harness
+  - 分类/面试
+  - 主题/ci-cd
+status: complete
+category: devops
 ---
 
 # Harness 面试高频问题

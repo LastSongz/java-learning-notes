@@ -1,3 +1,14 @@
+---
+title: "SOLID原则"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/架构
+  - 主题/solid
+status: complete
+category: java
+---
+
 # SOLID原则
 
 > Robert C. Martin 提出的五个软件设计原则

@@ -1,3 +1,14 @@
+---
+title: "MySQL主从复制原理"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/数据库
+  - 主题/主从复制
+status: complete
+category: database
+---
+
 # mysql主从复制原理
 
 ## 一、为什么需要主从复制？

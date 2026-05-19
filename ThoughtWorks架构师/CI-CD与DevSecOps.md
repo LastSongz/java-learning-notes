@@ -1,3 +1,15 @@
+---
+title: "CI-CD与DevSecOps"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/devops
+  - 主题/ci-cd
+  - 主题/安全
+status: complete
+category: devops
+---
+
 # CI-CD与DevSecOps
 
 > 持续集成、持续交付与安全实践

@@ -1,6 +1,14 @@
 ---
+title: "Harness vs Jenkins对比"
 created: 2026-04-26
-tags: #devops #harness #jenkins #对比 #迁移
+updated: 2026-05-19
+tags:
+  - 分类/devops
+  - 主题/harness
+  - 主题/jenkins
+  - 对比
+status: complete
+category: devops
 ---
 
 # Harness vs Jenkins 对比

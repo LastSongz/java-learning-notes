@@ -1,3 +1,14 @@
+---
+title: "ThoughtWorks架构师MOC"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/架构
+  - 类型/moc
+status: complete
+category: java
+---
+
 # ThoughtWorks架构师 - 知识地图 (MOC)
 
 > 本笔记库涵盖ThoughtWorks高级技术架构师岗位要求的所有核心技术栈
@@ -42,7 +53,7 @@
 
 ### [[数据库与缓存]]
 - MySQL - InnoDB、索引、查询优化
-- PostgreSQL - JSONB、MVCC、索引类型
+- PostgreSQL - JSONB、[[MVCC多版本并发控制]]、索引类型
 - Redis - 数据结构、缓存模式、持久化
 > **面试高频**: "MVCC是怎么实现的？Redis持久化选哪个？"
 

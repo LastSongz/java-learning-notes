@@ -1,10 +1,19 @@
 ---
-tags: #jvm #java #面试 #运达
+title: "JVM 内存结构"
+created: 2026-04-11
+updated: 2026-05-19
+tags:
+  - 分类/jvm
+  - 分类/java
+  - 分类/面试
+  - 运达
+status: complete
+category: jvm
 ---
 
 # JVM 内存结构
 
-> 8年经验面试速查，运达专版。核心知识点全覆盖，适合快速回忆和深度理解。
+> 8年经验面试速查，[[运达面试专区]]专版。核心知识点全覆盖，适合快速回忆和深度理解。
 
 ---
 
@@ -298,7 +307,7 @@ int c = 0;
 
 1. **程序顺序规则**：同一个线程中，前面的操作 happens-before 后面的操作
 2. **解锁规则**：unlock 操作 happens-before 后续对同一个锁的 lock
-3. **volatile 写规则**：volatile 写 happens-before 后续对同一个变量的 read
+3. **[[锁机制与并发原语]] 写规则**：volatile 写 happens-before 后续对同一个变量的 read
 4. **线程 start 规则**：线程.start() happens-before 该线程的任何操作
 5. **线程终止规则**：线程的所有操作 happens-before 其他线程检测到该线程终止
 6. **中断规则**：线程.interrupt() happens-before 被中断线程检测到中断
@@ -898,6 +907,4 @@ public class MemoryLeakExample {
 
 ## 关联笔记
 
-关联笔记: [[锁机制与并发原语]] [[简历知识点总结]] [[运达面试专区]]
-
-参考资源: [[MOC-Java面试]]
+关联笔记: [[

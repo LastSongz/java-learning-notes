@@ -1,3 +1,13 @@
+---
+title: "API开发"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/ai
+status: complete
+category: ai
+---
+
 # 08 - API 开发
 
 > 第三阶段 · 第2课 | 2026-05-06

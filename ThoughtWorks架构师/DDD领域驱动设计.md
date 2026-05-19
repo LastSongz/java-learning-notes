@@ -1,3 +1,13 @@
+---
+title: "DDD领域驱动设计"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/架构
+status: complete
+category: java
+---
+
 # DDD领域驱动设计
 
 > 通过领域专家与技术团队的协作，将复杂业务领域建模为清晰的结构

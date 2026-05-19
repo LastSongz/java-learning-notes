@@ -1,3 +1,15 @@
+---
+title: "MVCC多版本并发控制"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/数据库
+  - 主题/mvcc
+  - 分类/面试
+status: complete
+category: database
+---
+
 # MVCC多版本并发控制
 
 ### 1、MVCC

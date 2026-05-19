@@ -1,3 +1,14 @@
+---
+title: "DRY原则"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/架构
+  - 主题/dry
+status: complete
+category: java
+---
+
 # DRY原则 (Don't Repeat Yourself)
 
 > "系统中的每条知识都必须有单一、明确、权威的表示。" — Andy Hunt & Dave Thomas

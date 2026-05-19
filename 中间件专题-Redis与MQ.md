@@ -1,5 +1,15 @@
 ---
-tags: #redis #mq #中间件 #面试 #运达
+title: "中间件专题：Redis 与 MQ"
+created: 2026-04-11
+updated: 2026-05-19
+tags:
+  - 主题/redis
+  - 主题/mq
+  - 分类/中间件
+  - 分类/面试
+  - 运达
+status: complete
+category: middleware
 ---
 
 # 中间件专题：Redis 与 MQ
@@ -354,7 +364,7 @@ Redis 高可用方案从简单到复杂分为：主从复制、哨兵模式、�
 
 **L1 本地缓存（Caffeine）**：
 - 进程内缓存，访问延迟 < 1μs
-- 基于 LinkedHashMap 实现，采用 W-TinyLFU 淘汰算法
+- 基于 Linked[[HashMap与ConcurrentHashMap]] 实现，采用 W-TinyLFU 淘汰算法
 - 适合存储热点数据（访问频率极高的数据）
 
 **L2 分布式缓存（Redis）**：
@@ -401,7 +411,7 @@ Redis 高可用方案从简单到复杂分为：主从复制、哨兵模式、�
 - 客户端埋点统计
 
 **热点 Key 解决方案**：
-- **本地缓存**：热点 key 存入 JVM 堆缓存
+- **本地缓存**：热点 key 存入 [[JVM内存结构]] 堆缓存
 - **热点 Key 备份**：对热点 key 追加随机后缀，路由到不同实例
 - **读写分离**：读请求走从库，写请求走主库
 
@@ -1223,13 +1233,4 @@ mqadmin topicRoute -n localhost:9876 -t my-topic
 
 - [[简历知识点总结]]
 - [[运达面试专区]]
-- [[MVCC多版本并发控制]]
-
-## 参考资源
-
-- [[MOC-Java面试]]
-
----
-
-*文档更新时间：2026年4月*
-*整理：Sisyphus-Junior*
+- [[MV

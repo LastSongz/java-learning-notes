@@ -1,3 +1,13 @@
+---
+title: "Prompt Engineering"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/ai
+status: complete
+category: ai
+---
+
 # 07 - Prompt Engineering
 
 > 第三阶段 · 第1课 | 2026-05-06

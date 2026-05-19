@@ -1,6 +1,13 @@
 ---
+title: "MOC-Java面试"
 created: 2026-04-11
-tags: #moc #java #面试 #状态/已整理
+updated: 2026-05-19
+tags:
+  - 类型/moc
+  - 分类/java
+  - 分类/面试
+status: complete
+category: interview
 ---
 
 # MOC: Java 面试准备
@@ -142,5 +149,4 @@ tags: #moc #java #面试 #状态/已整理
 
 ## ✅ 待完成
 
-- [ ] 从 [[简历知识点总结]] 提取更多闪卡到 [[面试问题记录]]
-- [ ] 创建 Java 核心知识闪卡集合
+- [ ] 从 [[简历知识点总结]] 提取更多闪�

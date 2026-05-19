@@ -1,3 +1,14 @@
+---
+title: "MySQL的加锁情况"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/数据库
+  - 主题/锁与并发
+status: complete
+category: database
+---
+
 # mysql的加锁情况
 
 ## 1、REPEATABLE-READ隔离级别+表无显式主键和索引

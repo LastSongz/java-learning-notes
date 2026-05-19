@@ -1,3 +1,15 @@
+---
+title: "MYSQL面试突击-索引"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/数据库
+  - 分类/面试
+  - 主题/索引
+status: complete
+category: database
+---
+
 # MYSQL面试突击---索引
 
 ### 1、**什么是 MySQL 索引？索引的核心作用是什么？**

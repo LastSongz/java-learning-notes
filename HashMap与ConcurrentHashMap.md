@@ -1,5 +1,15 @@
 ---
-tags: #java #集合框架 #面试 #运达 #高频考点
+title: "HashMap 与 ConcurrentHashMap"
+created: 2026-04-11
+updated: 2026-05-19
+tags:
+  - 分类/java
+  - 主题/集合框架
+  - 分类/面试
+  - 运达
+  - 高频考点
+status: complete
+category: java
 ---
 
 # HashMap 与 ConcurrentHashMap
@@ -479,9 +489,9 @@ final V putVal(K key, V value, boolean onlyIfAbsent) {
 
 **为什么 JDK8 用 synchronized 而不是 ReentrantLock？**
 
-1. **JVM 优化**：synchronized 在 JDK6 后引入了锁升级机制（偏向锁 → 轻量级锁 → 重量级锁），在大多数场景下性能已经很优秀
+1. **[[JVM内存结构]] 优化**：synchronized 在 JDK6 后引入了锁升级机制（偏向锁 → 轻量级锁 → 重量级锁），在大多数场景下性能已经很优秀
 2. **API 简洁**：不需要手动释放锁，减少错误
-3. **内存占用**：synchronized 的轻量级锁使用对象头 Mark Word，比 ReentrantLock 的 AQS 更轻量
+3. **内存占用**：synchronized 的轻量级锁使用对象头 Mark Word，比 ReentrantLock 的 [[锁机制与并发原语]] 更轻量
 
 ### 3.3 get 操作无锁原理
 
@@ -823,12 +833,4 @@ tail = e;
 
 ---
 
-## 关联笔记
-
-- [[锁机制与并发原语]]
-- [[简历知识点总结]]
-- [[运达面试专区]]
-
-## 参考资源
-
-- [[MOC-Java面试]]
+## 关联笔�

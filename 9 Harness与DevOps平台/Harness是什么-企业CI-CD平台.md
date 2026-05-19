@@ -1,6 +1,15 @@
 ---
+title: "Harness是什么-企业CI-CD平台"
 created: 2026-04-26
-tags: #devops #harness #ci-cd #平台 #面试准备
+updated: 2026-05-19
+tags:
+  - 分类/devops
+  - 主题/harness
+  - 主题/ci-cd
+  - 平台
+  - 面试准备
+status: complete
+category: devops
 ---
 
 # Harness 是什么？— 企业级 CI/CD 平台

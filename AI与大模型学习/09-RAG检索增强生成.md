@@ -1,3 +1,13 @@
+---
+title: "RAG检索增强生成"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/ai
+status: complete
+category: ai
+---
+
 # 09 - RAG（检索增强生成）
 
 > 第三阶段 · 第3课 | 2026-05-06

@@ -1,3 +1,15 @@
+---
+title: "MYSQL面试突击-SQL优化"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/数据库
+  - 分类/面试
+  - 主题/sql优化
+status: complete
+category: database
+---
+
 # MYSQL面试突击---SQL优化
 
 ### 优化案例1：

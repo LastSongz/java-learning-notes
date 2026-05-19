@@ -1,3 +1,13 @@
+---
+title: "大模型LLM是什么"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/ai
+status: complete
+category: ai
+---
+
 # 02 - 大模型（LLM）是什么
 
 > 第一阶段 · 第2课 | 2026-05-06

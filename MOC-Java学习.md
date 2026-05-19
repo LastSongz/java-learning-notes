@@ -1,6 +1,13 @@
 ---
+title: "MOC-Java学习"
 created: 2026-04-11
-tags: #moc #java #学习 #状态/已整理
+updated: 2026-05-19
+tags:
+  - 类型/moc
+  - 分类/java
+  - 学习
+status: complete
+category: java
 ---
 
 # MOC: Java 学习导航
@@ -145,5 +152,4 @@ tags: #moc #java #学习 #状态/已整理
 ## 🔗 关联 MOC
 
 - [[MOC-Java面试]] - 面试准备专用导航
-- [[运达面试专区]] - 运达公司面试速查入口
-- [[MOC-Harness与DevOps]] - DevOps 平台与 CI/CD 工具导航
+- [[运达面试专区]] - 运达公司面试速查入�

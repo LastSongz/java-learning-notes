@@ -1,3 +1,13 @@
+---
+title: "微调技术LoRA与QLoRA"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/ai
+status: complete
+category: ai
+---
+
 # 12 - 微调技术：LoRA 与 QLoRA
 
 > 第四阶段 · 第2课 | 2026-05-06

@@ -1,3 +1,15 @@
+---
+title: "Java基础面试题"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/java
+  - 分类/面试
+  - 类型/基础
+status: complete
+category: java
+---
+
 ## <font style="color:#7E45E8;">面向过程语言和面向对象语言的区别</font>
 面向过程语言和面向对象语言是两种主流的编程范式，也可以理解是两种思维、两种思想、两种模式、两种逻辑。
 
@@ -98,7 +110,7 @@ Java是一种高级编程语言，由Sun Microsystems（现为Oracle Corporation
 
 1. 简单易学：语法简单，上手容易，<font style="background-color:rgb(253, 253, 254);">没有C++中容易混淆的概念，例如头文件、指针、结构、单元、运算符重载和虚拟基础类等</font>；
 2. 面向对象：封装，继承，多态，<font style="background-color:rgb(253, 253, 254);">符合人类的思维习惯，</font>可以让程序设计更加模块化、易维护；
-3. <font style="background-color:rgb(253, 253, 254);">跨平台性：</font>Java 虚拟机实现平台无关性，<font style="background-color:rgb(253, 253, 254);">一次编译，处处运行，Java编写的程序可以在任何安装了Java虚拟机（JVM）的计算机上正确运行</font>；
+3. <font style="background-color:rgb(253, 253, 254);">跨平台性：</font>Java 虚拟机实现平台无关性，<font style="background-color:rgb(253, 253, 254);">一次编译，处处运行，Java编写的程序可以在任何安装了Java虚拟机（[[JVM内存结构]]）的计算机上正确运行</font>；
 4. 支持多线程：<font style="background-color:rgb(253, 253, 254);">允许多个任务同时执行，实际上是处理器在不同线程之间快速切换造成的错觉</font>；
 5. 编译与解释并存：<font style="background-color:rgb(253, 253, 254);">把程序编译为称作字节码，字节码在JVM上解释执行</font>；
 6. <font style="background-color:rgb(253, 253, 254);">垃圾回收机制</font><font style="background-color:rgb(253, 253, 254);">：垃圾回收机制（Garbage Collection，GC），能够自动回收程序不再使用的内存空间</font>
@@ -276,7 +288,7 @@ Java关键字一共有53个，其中包括48个关键字、2个保留字和3个�
 
 条件循环：`if`、`else`、`while`、`for`、`switch`、`case`、`default`、`do`、`break`、`continue`、`return`、`instanceof`
 
-修饰方法、类、属性和变量：`static`、`super`、`final`、`this`、`native`、`strictfp`、`synchronized`、`transient`、`volatile`
+修饰方法、类、属性和变量：`static`、`super`、`final`、`this`、`native`、`strictfp`、`synchronized`、`transient`、`[[锁机制与并发原语]]`
 
 错误处理：`catch`、`try`、`finally`、`throw`、`throws`
 
@@ -923,7 +935,7 @@ boolean equals(Object o){
 ## <font style="color:#7E45E8;">hashCode方法的作用？</font>
 一般来讲，equals这个方法是给用户调用的，如果你想判断2个对象是否相等，你可以重写equals方法，然后在代码中调用，就可以判断他们是否相等了。简单来讲，equals方法主要是用来判断从表面上看或者从内容上看，2个对象是不是相等。
 
-hashcode方法一般用户不会去调用，比如在HashMap中，由于key是不可以重复的，在判断key是不是重复的时候就判断了hashcode这个方法，而且也用到了equals方法。和equals不同就在于他返回的是int型的，比较起来不直观。我们一般在覆盖equals的同时也要覆盖hashcode，让他们的逻辑一致。
+hashcode方法一般用户不会去调用，比如在[[HashMap与ConcurrentHashMap]]中，由于key是不可以重复的，在判断key是不是重复的时候就判断了hashcode这个方法，而且也用到了equals方法。和equals不同就在于他返回的是int型的，比较起来不直观。我们一般在覆盖equals的同时也要覆盖hashcode，让他们的逻辑一致。
 
 ## <font style="color:#7E45E8;">基本类型和包装类型的区别？</font>
 <font style="color:rgb(5, 7, 59);background-color:rgb(253, 253, 254);">Java中的基本类型（Primitive Types）和包装类型（Wrapper Classes）之间存在多个关键区别，这些区别主要体现在以下方面：</font>

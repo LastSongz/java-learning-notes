@@ -1,3 +1,15 @@
+---
+title: "MySQL主从复制安装配置"
+created: 2026-05-19
+updated: 2026-05-19
+tags:
+  - 分类/数据库
+  - 主题/主从复制
+  - 类型/实战
+status: complete
+category: database
+---
+
 # mysql主从复制安装配置
 
 ### 1、基础设置准备
