@@ -17,7 +17,7 @@ next: "[[LC-07-RAG检索增强生成实战]]"
 
 ## 3.6 Agent 异步调用
 
-Agent 的异步调用（`ainvoke`、`astream`、`abatch`）与模型的异步调用原理一致，但在 Agent 场景下价值更大——因为 Agent 通常涉及多轮推理和多次工具调用，异步可以显著减少总等待时间。
+Agent 的异步调用（`ainvoke`、`astream`、`abatch`）与模型的异步调用原理一致，但在 Agent 场景下价值更大——因为 Agent 通常涉及多轮推理和多次工具调用。需要注意的是，只有把多个任务并发调度起来，异步才会明显减少整体等待时间；单纯在 `for` 循环中逐个 `await`，本质上仍然是顺序执行。
 
 ```python
 import asyncio
@@ -45,6 +45,21 @@ async def main():
     print(result["messages"][-1].content)
 
 asyncio.run(main())
+```
+
+**并发查询多个城市：**
+
+```python
+async def main_parallel():
+    cities = ["北京", "上海", "广州"]
+    tasks = [query_city_info(agent, city) for city in cities]
+    results = await asyncio.gather(*tasks)
+
+    for city, result in zip(cities, results):
+        print(f"\n## {city}信息")
+        print(result["messages"][-1].content)
+
+asyncio.run(main_parallel())
 ```
 
 ## 3.7 Agent 流式输出及模式
@@ -219,7 +234,7 @@ for stream_mode, chunk in agent.stream(
 
 - 上一篇：[[LC-05-Agent工具与结构化输出]]
 - 下一篇：[[LC-07-RAG检索增强生成实战]]
-- 相关：[[LC-02-模型初始化与调用]] — 模型的异步调用基础
+- 相关：[[LC-02-模型调用与Chat Models]] — 模型的异步调用基础
 
 ---
 

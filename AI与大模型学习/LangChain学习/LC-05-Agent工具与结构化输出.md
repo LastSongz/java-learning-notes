@@ -36,6 +36,12 @@ def get_weather(city: str) -> str:
 
 > 工具函数的 **docstring** 非常重要，它会被 Agent 用来理解工具的用途。参数类型注解也是必须的。
 
+**工具定义注意事项：**
+- `@tool` 默认使用函数名作为工具名，也可以用 `@tool("get_employee_info")` 显式指定名称。
+- `description` 参数会覆盖函数 docstring，适合在工具描述需要更精确时使用。
+- 参数名不要使用 `config` 或 `runtime`，这些属于 LangChain 内部保留字段。
+- 工具描述越具体，模型越容易在正确时机调用正确工具。
+
 #### 3.4.1.2 使用 Pydantic 模型定义工具【推荐】
 
 当参数复杂、需要枚举值或业务逻辑验证时使用：
@@ -122,9 +128,9 @@ agent = create_agent(
 
 ### 3.5.1 结构化输出支持的策略
 
-`create_agent` 的 `response_format` 参数控制结构化输出，支持四种策略：
+`create_agent` 的 `response_format` 参数控制结构化输出，常见取值有四类：
 
-**1) ProviderStrategy** — 使用模型提供商的原生结构化输出功能。适用于 OpenAI、Anthropic Claude 等支持原生结构化输出的模型。
+**1) ProviderStrategy** — 使用模型提供商的原生结构化输出功能。适用于 OpenAI、Anthropic Claude、xAI Grok 等支持原生结构化输出的模型。
 
 ```python
 from langchain.agents.structured_output import ProviderStrategy
@@ -154,6 +160,8 @@ result["structured_response"]
 **3) type 直接传入** — LangChain 根据模型能力自动选择策略。
 
 **4) None（默认）** — 不使用结构化输出。
+
+> 版本校准：原始资料里提到“直接传入 schema 在 1.0 以上不再支持”的说法不准确。LangChain v1.x 官方文档仍支持直接传入 schema，由框架自动选择 `ProviderStrategy` 或 `ToolStrategy`。不过在生产项目中，为了行为更可控，推荐显式写 `ProviderStrategy(...)` 或 `ToolStrategy(...)`。
 
 ### 3.5.2 ToolStrategy
 
@@ -190,15 +198,12 @@ ToolStrategy 支持自定义工具消息格式，用于在结构化输出过程�
 可以自定义错误处理函数，在结构化输出解析失败时进行处理：
 
 ```python
-def handle_parsing_error(error, tool_call):
-    return ToolMessage(
-        content=f"格式解析失败，请重新生成。错误：{error}",
-        tool_call_id=tool_call["id"]
-    )
+def handle_parsing_error(error: Exception) -> str:
+    return f"格式解析失败，请重新生成。错误：{error}"
 
 agent = create_agent(
     model=deepseek_llm,
-    response_format=ToolStrategy(ProductReview, handle_error=handle_parsing_error)
+    response_format=ToolStrategy(ProductReview, handle_errors=handle_parsing_error)
 )
 ```
 
@@ -206,7 +211,7 @@ agent = create_agent(
 
 1. LangChain 有哪三种工具创建方式？各自的适用场景是什么？
 2. `@wrap_tool_call` 中间件的执行时机是什么？
-3. Agent 结构化输出的四种策略是什么？各自适用于什么模型？
+3. Agent 结构化输出的四类 `response_format` 取值是什么？各自适用于什么模型？
 4. ToolStrategy 的核心原理是什么？它如何实现结构化输出？
 5. ToolMessage 的两个必传参数是什么？
 

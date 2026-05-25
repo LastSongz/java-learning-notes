@@ -55,7 +55,9 @@ LangChain 通过统一的 API 抽象层，解决了不同模型提供商接口�
 
 ### 2) 模块化架构
 
-LangChain 采用高度模块化架构，将复杂的大模型应用分解为可复用的构建块。核心组件包括模型（Models）、提示模板（Prompts）、记忆（Memory）、链（Chains）、智能体（Agents）和工具（Tools）等。这种设计使开发者可以**像搭积木一样组合各种功能**，快速构建符合特定需求的 AI 应用。
+LangChain 采用高度模块化架构，将复杂的大模型应用分解为可复用的构建块。常见组件包括：**Models（模型调用）**、**Prompts（提示词模板）**、**Tools（外部工具）**、**Agents（智能体）**、**Structured Output（结构化输出）**、**Middleware（中间件）**、**Streaming（流式输出）**，以及旧版体系中常见的 **Chains（链式编排）** 和 **Memory（记忆管理）**。
+
+需要注意的是，LangChain v1.x 的学习主线更聚焦 **Models、Tools、Agents、Structured Output、Middleware、Streaming** 等 Agent 应用开发能力；旧版 Chains、Memory 等组件仍可在 `langchain-classic` 或 LangGraph 相关能力中理解，但学习时应优先掌握 v1 的 Agent 与 LangGraph 口径。
 
 组件的可组合性体现在 **LangChain 表达式语言（LCEL）** 中，它允许开发者通过管道操作符（`|`）将多个组件连接成复杂的工作流。例如，一个简单的检索增强生成流程可以通过组合检索器、提示模板和 LLM 来实现。这种声明式的工作流定义方式不仅代码简洁，而且天然支持**流式输出、异步调用和并行执行**等高级特性，显著提升了开发效率和运行时性能。
 
@@ -123,7 +125,7 @@ LangChain 优化了结构化内容生成流程，通过提示模板和输出解�
 
 ### 1.4.1 Python 环境准备
 
-LangChain 1.2 版本要求 Python 版本为 **3.10+** 以上，本课程使用 Python **3.13.11** 版本，使用 Anaconda 管理环境：
+LangChain v1.x 要求 Python 版本为 **3.10+** 以上。本课程使用 Python **3.13.11** 版本，使用 Anaconda 管理环境：
 
 ```bash
 # 创建名为 langchain_v1.2 的环境，指定 Python 版本
@@ -154,10 +156,10 @@ conda remove --name langchain_v1.2 --all
 conda activate langchain_v1.2
 
 # 安装依赖（使用清华镜像源加速）
-python -m pip install langchain==1.2.0 langchain-deepseek==1.0.1 dotenv==0.9.9 -i https://pypi.tuna.tsinghua.edu.cn/simple
+python -m pip install -U langchain langchain-deepseek python-dotenv -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-> 说明：`langchain-deepseek` 是使用 DeepSeek 大模型的必要依赖；`dotenv` 是从项目根目录 `.env` 文件中加载自定义环境变量的必要依赖。
+> 说明：`langchain-deepseek` 是使用 DeepSeek 大模型的必要依赖；`python-dotenv` 提供 `dotenv` 模块，用于从项目根目录 `.env` 文件中加载自定义环境变量。
 
 **2) 创建 `.env` 文件**
 
@@ -254,16 +256,15 @@ LangChain 架构层次
 │   ├── Text Splitters - 文本分割器
 │   ├── Vector Stores - 向量数据库
 │   └── Retrievers - 检索器
-├── Chains（链）
-│   ├── LCEL（LangChain Expression Language）
-│   └── 通用链与专用链
 ├── Agents（智能代理）
 │   ├── Tools - 工具定义
-│   ├── Agent Types - 代理类型
-│   └── Executor - 执行器
-├── Memory（记忆）
-│   ├── 短期记忆
-│   └── 长期记忆
+│   ├── Middleware - 动态模型、动态提示词、工具错误处理
+│   ├── Structured Output - 结构化响应
+│   └── Streaming - 流式输出
+├── LangGraph Runtime
+│   ├── StateGraph - 状态图
+│   ├── Checkpoint - 状态持久化
+│   └── Human-in-the-loop - 人工介入
 └── Callbacks（回调）
     └── 日志、监控与可观测性
 ```
@@ -275,7 +276,7 @@ LangChain 架构层次
 | LangChain | 核心框架 |
 | LangGraph | 状态图工作流编排（v1.0 后为底层智能体编排框架） |
 | LangSmith | 调试、测试与监控平台 |
-| LangServe | 将 Chain 部署为 REST API |
+| LangGraph Platform / LangGraph Server | 将 Agent / Graph 部署为服务 |
 
 ## 与相关概念的关系
 

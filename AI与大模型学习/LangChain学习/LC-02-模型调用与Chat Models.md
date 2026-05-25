@@ -131,6 +131,8 @@ tongyi_llm2 = ChatOpenAI(
 
 `model_provider` 常见参数：`openai`、`anthropic`、`deepseek`、`ollama`。如果模型供应商没有对应的 provider 但支持标准 OpenAI 访问，可以设置 `model_provider="openai"`。
 
+新版文档也支持把供应商写进 `model` 字符串中，例如 `init_chat_model("deepseek:deepseek-chat")`、`init_chat_model("openai:gpt-4o")`。如果供应商是固定的，使用 `provider:model` 形式更直观；如果供应商和模型名需要从配置动态读取，继续使用 `model` + `model_provider` 两个参数更方便。
+
 ```python
 from langchain.chat_models import init_chat_model
 from langchain_core.language_models import BaseChatModel
@@ -330,8 +332,10 @@ import asyncio
 async def demo_async_invoke():
     print("程序开始...")
 
-    # 发起异步请求，但不等待完成
-    async_task = llm.ainvoke("用一句话解释人工智能。")
+    # 创建异步任务，让模型请求真正开始执行
+    async_task = asyncio.create_task(
+        llm.ainvoke("用一句话解释人工智能。")
+    )
 
     # 同时执行其他任务
     for i in range(3):
@@ -344,6 +348,8 @@ async def demo_async_invoke():
 
 asyncio.run(demo_async_invoke())
 ```
+
+> 注意：`llm.ainvoke(...)` 本身返回的是协程对象。只有 `await` 它，或用 `asyncio.create_task(...)` 把它调度成任务后，请求才会真正并发执行。
 
 异步流式调用使用 `async for`：
 
