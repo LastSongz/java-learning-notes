@@ -1,14 +1,14 @@
 ---
 title: "LC-06-Agent异步调用与流式输出"
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-06-07
 tags:
   - 分类/langchain
   - 分类/ai
   - 难度/进阶
 status: in-progress
 prev: "[[LC-05-Agent工具与结构化输出]]"
-next: "[[LC-07-RAG检索增强生成实战]]"
+next: "[[LC-07-Agent短期记忆]]"
 ---
 
 # LC-06 Agent 异步调用与流式输出
@@ -152,10 +152,10 @@ for chunk in agent.stream(
 当检查点（checkpoint）被创建时触发输出，输出包含检查点中的状态。用于需要状态持久化、工作流恢复或分布式执行跟踪的高级场景：
 
 ```python
-from langgraph.checkpoint.memory import MemorySaver
+from langgraph.checkpoint.memory import InMemorySaver
 
 # 创建内存检查点存储
-checkpointer = MemorySaver()
+checkpointer = InMemorySaver()
 
 agent = create_agent(
     model=deepseek_llm,
@@ -233,9 +233,9 @@ for stream_mode, chunk in agent.stream(
 ## 知识关联
 
 - 上一篇：[[LC-05-Agent工具与结构化输出]]
-- 下一篇：[[LC-07-RAG检索增强生成实战]]
+- 下一篇：[[LC-07-Agent短期记忆]]
 - 相关：[[LC-02-模型调用与Chat Models]] — 模型的异步调用基础
 
 ---
 
-*上一篇：[[LC-05-Agent工具与结构化输出]] | 下一篇：[[LC-07-RAG检索增强生成实战]]*
+*上一篇：[[LC-05-Agent工具与结构化输出]] | 下一篇：[[LC-07-Agent短期记忆]]*

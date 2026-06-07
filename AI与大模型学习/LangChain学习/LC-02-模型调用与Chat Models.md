@@ -1,7 +1,7 @@
 ---
 title: "LC-02-模型初始化与调用"
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-06-07
 tags:
   - 分类/langchain
   - 分类/ai
@@ -369,6 +369,20 @@ async def demo_async_batch():
     for response in responses:
         print(response.content)
 ```
+
+## 配套 IDE Demo
+
+为了加深记忆，本节提供了一组可在 IDE 中运行的小示例：
+
+| Demo | 重点 | 文件 |
+|------|------|------|
+| 01 | `invoke()` 基础调用 | [[demos/lc02/01_invoke_basic.py]] |
+| 02 | `SystemMessage` / `HumanMessage` / `AIMessage` | [[demos/lc02/02_messages_conversation.py]] |
+| 03 | `stream()` 流式输出 | [[demos/lc02/03_stream_output.py]] |
+| 04 | `batch()` / `batch_as_completed()` 批量调用 | [[demos/lc02/04_batch_calls.py]] |
+| 05 | `ainvoke()` 异步调用 | [[demos/lc02/05_async_calls.py]] |
+
+运行前先参考：[[demos/lc02/README.md]]
 
 ## 关键面试考点
 

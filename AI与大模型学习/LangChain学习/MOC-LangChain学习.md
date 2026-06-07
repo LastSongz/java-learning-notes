@@ -1,7 +1,7 @@
 ---
 title: "MOC-LangChain学习"
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-06-07
 tags:
   - 类型/moc
   - 分类/ai
@@ -16,9 +16,11 @@ category: langchain
 
 ## 整理口径
 
-本目录由三份原始课程资料整理而来：第1章 LangChain 介绍、第2章 Models 模型、第3章 Agent 智能体。整理时没有逐字搬运原文，而是按学习路径拆成 6 篇本地笔记，并补充 LangChain v1.x / LangGraph 口径下更准确的理解。
+本目录由原始课程资料整理而来：第1章 LangChain 介绍、第2章 Models 模型、第3章 Agent 智能体、第4~5章 Agent 记忆。整理时没有逐字搬运原文，而是按学习路径拆成本地笔记，并补充 LangChain v1.x / LangGraph 口径下更准确的理解。
 
 详细对照见：[[资料对照-原始文档与本地笔记]]
+
+配套手敲练习见：[[LC-Demo手敲指南-Java与Python]]
 
 ## 前置知识
 
@@ -50,12 +52,20 @@ category: langchain
 | LC-05 | [[LC-05-Agent工具与结构化输出]] | ✅ 已完成 |
 | LC-06 | [[LC-06-Agent异步调用与流式输出]] | ✅ 已完成 |
 
-### 第四阶段：进阶与实战
+### 第四阶段：Agent 记忆
+
 | 编号 | 主题 | 状态 |
 |------|------|------|
-| LC-07 | [[LC-07-RAG检索增强生成实战]] | 🔲 待学习 |
-| LC-08 | [[LC-08-LangGraph状态图工作流]] | 🔲 待学习 |
-| LC-09 | [[LC-09-LangChain项目实战]] | 🔲 待学习 |
+| LC-07 | [[LC-07-Agent短期记忆]] | ✅ 已整理 |
+| LC-08 | [[LC-08-Agent长期记忆]] | ✅ 已整理 |
+| LC-09 | [[LC-09-Agent记忆综合案例]] | ✅ 已整理 |
+
+### 第五阶段：RAG 与 LangGraph 实战
+| 编号 | 主题 | 状态 |
+|------|------|------|
+| LC-10 | [[LC-10-RAG检索增强生成实战]] | 📝 已建索引 |
+| LC-11 | [[LC-11-LangGraph状态图工作流]] | 🔲 待学习 |
+| LC-12 | [[LC-12-LangChain项目实战]] | 🔲 待学习 |
 
 ## 相关面试题
 - [[18-RAG落地实战]]
@@ -69,3 +79,4 @@ category: langchain
 | 第1章 LangChain介绍 | https://cloud.fynote.com/share/d/IyAJ0qZI0 | [[LC-01-LangChain概述与核心架构]] |
 | 第2章 Models 模型 | https://cloud.fynote.com/share/d/GyAJGYW66 | [[LC-02-模型调用与Chat Models]]、[[LC-03-模型结构化输出与工具调用]] |
 | 第3章 Agent 智能体 | https://cloud.fynote.com/share/d/AyWXMhzG | [[LC-04-Agent智能体基础]]、[[LC-05-Agent工具与结构化输出]]、[[LC-06-Agent异步调用与流式输出]] |
+| 第4~5章 Agent 记忆 | https://cloud.fynote.com/share/d/jA0JAHWpQ | [[LC-07-Agent短期记忆]]、[[LC-08-Agent长期记忆]]、[[LC-09-Agent记忆综合案例]] |
