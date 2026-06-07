@@ -1,7 +1,7 @@
 ---
 title: "MOC-LangChain学习"
 created: 2026-05-21
-updated: 2026-06-07
+updated: 2026-06-08
 tags:
   - 类型/moc
   - 分类/ai
@@ -64,8 +64,8 @@ category: langchain
 | 编号 | 主题 | 状态 |
 |------|------|------|
 | LC-10 | [[LC-10-RAG检索增强生成实战]] | 📝 已建索引 |
-| LC-11 | [[LC-11-LangGraph状态图工作流]] | 🔲 待学习 |
-| LC-12 | [[LC-12-LangChain项目实战]] | 🔲 待学习 |
+| LC-11 | [[LC-11-LangGraph状态图工作流]] | 📝 已建索引 |
+| LC-12 | [[LC-12-LangChain项目实战]] | 📝 已建索引 |
 
 ## 相关面试题
 - [[18-RAG落地实战]]
