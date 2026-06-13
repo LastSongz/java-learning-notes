@@ -1,7 +1,7 @@
 ---
 title: "MOC-Java面试"
 created: 2026-04-11
-updated: 2026-05-19
+updated: 2026-06-12
 tags:
   - 类型/moc
   - 分类/java
@@ -23,6 +23,11 @@ category: interview
 - [[运达面试专区]]
   > 针对**运达公司**面试的5大核心知识点速查入口
   > JVM内存结构 / Redis与MQ中间件 / HashMap与CHM / 锁与AQS / MVCC
+
+### Strikingly
+- [[Strikingly中级后端工程师面试复习清单]]
+  > 针对 Strikingly 中级后端工程师岗位的复习总控清单
+  > Java 后端基本盘 / Rails 与 RESTful / 数据库与 API 设计 / 云平台 / AI 应用后端
 
 ---
 
@@ -61,6 +66,9 @@ category: interview
   - [[简历知识点总结#模块二：Java并发编程与多线程优化]]
   - [[简历知识点总结#模块三：JVM底层调优与故障排查]]
   - [[简历知识点总结#模块四：分布式架构与高可用设计]]
+
+- [[架构能力与工程实践面试清单]]
+  > 高级开发 / 架构岗位能力地图，整合 DDD、微服务、高并发、CI/CD、AI 工程化和面试流程经验
 
 - [[简历涉及知识点针对性梳理]]
   > 针对简历内容的知识点强化（Flashcard格式）
