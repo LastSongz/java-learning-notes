@@ -1,2 +1,6 @@
 .obsidian/
 .trash/
+__pycache__/
+*.pyc
+outputs/pdf/.deps/
+outputs/pdf/preview/
