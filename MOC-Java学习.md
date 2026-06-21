@@ -1,7 +1,7 @@
 ---
 title: "MOC-Java学习"
 created: 2026-04-11
-updated: 2026-06-12
+updated: 2026-06-21
 tags:
   - 类型/moc
   - 分类/java
@@ -63,7 +63,7 @@ category: java
   > MySQL MVCC原理：隐藏字段、Undo Log、Read View、RC/RR差异
 
 ### 培训机构笔记（msb）
-- [[msb/java基础面试题]] > Java基础完整笔记
+- [[java基础面试题]] > Java基础入口索引，已回链原始机构笔记
 - [[msb/核心框架源码常见问题（上）]] > MyBatis、Spring
 - [[msb/核心框架源码常见问题（下）]] > Spring循环依赖、AOP
 
@@ -141,7 +141,7 @@ category: java
 | 学习路径阶段 | 4 |
 | DevOps 工具笔记 | 4 |
 | 创建日期 | 2026-04-11 |
-| 最后更新 | 2026-04-27 |
+| 最后更新 | 2026-06-21 |
 
 ---
 
@@ -155,4 +155,5 @@ category: java
 ## 🔗 关联 MOC
 
 - [[MOC-Java面试]] - 面试准备专用导航
-- [[运达面试专区]] - 运达公司面试速查入�
+- [[Strikingly中级后端工程师面试复习清单]] - 当前岗位定向复习清单
+- [[运达面试专区]] - 运达公司面试速查入口
