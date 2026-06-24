@@ -1,7 +1,7 @@
 ---
 title: "Strikingly中级后端工程师面试复习清单"
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-24
 tags:
   - 分类/面试
   - 公司/Strikingly
@@ -39,22 +39,22 @@ category: interview
 > 优先级：最高。面试官很可能围绕你提交的数据库和 API 设计追问。
 
 - [ ] 数据库表拆分：`voters`、`phone_verification_codes`、`candidates`、`candidate_pictures`、`votes`
-  - 关联笔记：待新建 [[Strikingly笔试设计复盘]]
+  - 关联笔记：[[Strikingly笔试设计复盘]]
   - 关注点：为什么这么拆表；哪些字段来自页面；哪些字段来自操作规则；有没有过度设计。
 - [ ] 候选人照片建模
-  - 关联笔记：待新建 [[Strikingly笔试设计复盘]]
+  - 关联笔记：[[Strikingly笔试设计复盘]]
   - 关注点：为什么 20 张照片单独建表；为什么需要 `position`；为什么不用 id 顺序承担业务展示顺序。
 - [ ] 投票唯一性和并发防重
   - 关联笔记：[[架构能力与工程实践面试清单]]
   - 关注点：前端禁用按钮只是体验；后端靠 `votes.voter_id` 唯一约束兜底；并发插入只有一条成功。
 - [ ] PostgreSQL 表设计取舍
-  - 关联笔记：待新建 [[PostgreSQL面试速记]]
+  - 关联笔记：[[PostgreSQL面试速记]]
   - 关注点：Rails + PostgreSQL 默认主键可以是 bigint；UUID 不是默认方案；`delete_flag` 低区分度不适合单列普通索引；`COMMENT ON TABLE/COLUMN`。
 - [ ] 审计字段和软删除
-  - 关联笔记：待新建 [[Strikingly笔试设计复盘]]
+  - 关联笔记：[[Strikingly笔试设计复盘]]
   - 关注点：`created_by`、`last_updated_by`、`creation_date`、`last_update_date`、`last_update_version`、`delete_flag` 的语义；`Y/N` 删除标识；系统用户用 0。
 - [ ] REST API 命名和 Rails routing
-  - 关联笔记：待新建 [[Rails RESTful Routing 面试速记]]
+  - 关联笔记：[[Rails RESTful Routing 面试速记]]
   - 关注点：URL 表示资源，HTTP Method 表示动作；`resource :session` 和 `resources :voters` 的区别；为什么不用 `signUp`、`voteCandidate`。
 
 ## 二、Ruby / Rails 入门准备
@@ -62,19 +62,19 @@ category: interview
 > 目标不是装成熟手，而是能证明自己认真准备过，并能把 Java Web 后端经验迁移过来。
 
 - [ ] Rails MVC
-  - 关联笔记：待新建 [[Ruby与Rails面试速记]]
+  - 关联笔记：[[Ruby与Rails面试速记]]
   - 关注点：Model、Controller、View 的职责；和 Spring MVC 的类比。
 - [ ] Active Record Migration
-  - 关联笔记：待新建 [[Ruby与Rails面试速记]]
+  - 关联笔记：[[Ruby与Rails面试速记]]
   - 关注点：表结构变更、字段约束、索引、数据库注释、Rails 约定。
 - [ ] Active Record Model
-  - 关联笔记：待新建 [[Ruby与Rails面试速记]]
+  - 关联笔记：[[Ruby与Rails面试速记]]
   - 关注点：validation、association、scope、counter_cache。
 - [ ] Rails RESTful Routing
-  - 关联笔记：待新建 [[Rails RESTful Routing 面试速记]]
+  - 关联笔记：[[Rails RESTful Routing 面试速记]]
   - 关注点：`resources`、`resource`、`only`、路径小写下划线复数。
 - [ ] Ruby 基础语法
-  - 关联笔记：待新建 [[Ruby基础语法面试速记]]
+  - 关联笔记：[[Ruby基础语法面试速记]]
   - 关注点：class、def、symbol、hash、array、block、map/select、nil?/present?。
 
 ## 三、Java / Spring 基本盘
@@ -112,7 +112,7 @@ category: interview
   - 关联笔记：[[MYSQL面试突击---SQL优化]]、[[mysql执行计划]]
   - 关注点：慢 SQL 排查、执行计划、扫描行数、排序、临时表、深分页。
 - [ ] PostgreSQL 补充
-  - 关联笔记：待新建 [[PostgreSQL面试速记]]
+  - 关联笔记：[[PostgreSQL面试速记]]
   - 关注点：bigint vs UUID、COMMENT、partial index、和 MySQL 的表达差异。
 
 ## 五、Redis / 缓存 / MQ
@@ -148,16 +148,16 @@ category: interview
 ## 七、云平台经验
 
 - [ ] 华为云经验转主流云表达
-  - 关联笔记：待新建 [[云平台经验面试表达]]
+  - 关联笔记：[[云平台经验面试表达]]
   - 关注点：不要说“几天就能完全上手”；表达 API 网关、对象存储、任务调度、日志监控、权限模型这些抽象相通。
 - [ ] API 网关
-  - 关联笔记：待新建 [[云平台经验面试表达]]
+  - 关联笔记：[[云平台经验面试表达]]
   - 关注点：路由、鉴权、限流、转发、灰度。
 - [ ] 对象存储
-  - 关联笔记：待新建 [[云平台经验面试表达]]
+  - 关联笔记：[[云平台经验面试表达]]
   - 关注点：图片/附件上传、访问 URL、权限、生命周期。
 - [ ] 任务调度和云上排障
-  - 关联笔记：待新建 [[云平台经验面试表达]]
+  - 关联笔记：[[云平台经验面试表达]]
   - 关注点：定时任务、重试、幂等、日志、告警、网络和权限问题。
 
 ## 八、AI 应用后端与 agentic coding
@@ -187,10 +187,10 @@ category: interview
   - 关联笔记：[[AI项目面试话术]]、[[19-微组件与工具调用设计]]
   - 关注点：真实边界；不要把没做过的微调、GPU 部署包装成实战。
 - [ ] 为什么从外包转产品公司
-  - 关联笔记：待新建 [[Strikingly面试动机与反问]]
+  - 关联笔记：[[Strikingly面试动机与反问]]
   - 关注点：从项目交付转向产品长期演进；希望参与自研 SaaS；不要抱怨外包。
 - [ ] 为什么愿意从 Java 转 Ruby/Rails
-  - 关联笔记：待新建 [[Strikingly面试动机与反问]]
+  - 关联笔记：[[Strikingly面试动机与反问]]
   - 关注点：后端核心能力可迁移；愿意学习；Rails 不是障碍，而是补充。
 
 ## 十、反问问题
