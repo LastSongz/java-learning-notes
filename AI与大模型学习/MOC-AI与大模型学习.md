@@ -61,6 +61,7 @@ category: ai
 | 主题 | 状态 | 说明 |
 |------|------|------|
 | [[定时任务驱动AI-Coding]] | ✅ 已完成 | agentic cron / scheduled AI agents，Agent 按计划自主跑开发任务 |
+| [[OpenCode与OpenSpec训练稿-20分钟]] | 📝 草稿 | OpenCode + OpenSpec + Superpowers 组合提升 Vibe Coding 质量的 20 分钟培训稿 |
 
 ---
 
