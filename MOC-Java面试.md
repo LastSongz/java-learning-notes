@@ -1,7 +1,7 @@
 ---
 title: "MOC-Java面试"
 created: 2026-04-11
-updated: 2026-06-24
+updated: 2026-07-05
 tags:
   - 类型/moc
   - 分类/java
@@ -40,12 +40,30 @@ category: interview
   > 针对 Strikingly 中级后端工程师岗位的复习总控清单
   > Java 后端基本盘 / Rails 与 RESTful / 数据库与 API 设计 / 云平台 / AI 应用后端
 
+- [[PostgreSQL面试速记]]
+  > Strikingly 笔试追问里最常见的 PostgreSQL 表设计、约束和索引取舍速记
+
+- [[Ruby与Rails面试速记]]
+  > 把 Rails MVC、Migration、Model 和 Java Web 经验迁移讲顺的总入口
+
+- [[Rails RESTful Routing 面试速记]]
+  > REST 资源命名、`resources` / `resource` 和路由表达的专项速记
+
+- [[Ruby基础语法面试速记]]
+  > 面试前快速过一遍 Ruby 语法、集合操作和常见表达差异
+
+- [[云平台经验面试表达]]
+  > 把华为云项目经验迁移到主流云平台语境时的表达模板
+
+- [[后端可用性与安全性面试速记]]
+  > 围绕鉴权、越权、幂等、限流、审计和敏感信息保护的专项速记
+
 ---
 
 ## 📚 核心笔记索引
 
 ### Java 基础
-- [[java基础面试题]] 
+- [[java基础面试题]]
   > 顶层入口索引，串起原始基础题长文与延伸专题
 
 ### Java 进阶（专题笔记）
@@ -71,7 +89,7 @@ category: interview
 ### 面试深度（核心知识库）
 - [[简历知识点总结]]
   > 47KB 核心面试知识，包含 4 大模块
-   
+
   **4大核心模块：**
   - [[简历知识点总结#模块一：DDD与复杂系统重构]]
   - [[简历知识点总结#模块二：Java并发编程与多线程优化]]
@@ -87,7 +105,7 @@ category: interview
 ### 复习工具
 - [[面试问题记录]]
   > Spaced Repetition 闪卡，利用间隔复习巩固知识
-   
+
 - [[部分题目记录]]
   > 8道深度面试题，涵盖 DDD、重构、JVM、并发
 
@@ -151,13 +169,14 @@ category: interview
 
 | 指标 | 数值 |
 |------|------|
-| 整合笔记数 | 16 |
+| 整合笔记数 | 20+ |
 | 核心知识模块 | 4 |
 | 专题笔记 | 5（JVM/锁/HashMap/中间件/MVCC） |
 | 公司面试专区 | 3（华晟国康 / 运达 / Strikingly） |
+| 公司专项速记 | 6（复用件 / PostgreSQL / Ruby / Rails / 云平台 / 安全性） |
 | Spaced Repetition 卡片 | 15+ |
 | 创建日期 | 2026-04-11 |
-| 最后更新 | 2026-06-24 |
+| 最后更新 | 2026-07-05 |
 
 ---
 
