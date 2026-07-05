@@ -35,22 +35,18 @@ category: interview
 - [[复用件平台产品理解]]
   > 围绕运达平台化话题的专项展开，方便单独复习“复用件平台”这类方案题
 
-### Strikingly
-- [[Strikingly中级后端工程师面试复习清单]]
-  > 针对 Strikingly 中级后端工程师岗位的复习总控清单
-  > Java 后端基本盘 / Rails 与 RESTful / 数据库与 API 设计 / 云平台 / AI 应用后端
-
+### 跨栈与通用后端补充
 - [[PostgreSQL面试速记]]
-  > Strikingly 笔试追问里最常见的 PostgreSQL 表设计、约束和索引取舍速记
+  > PostgreSQL 表设计、约束、索引取舍以及 Rails 场景下的建模表达
 
 - [[Ruby与Rails面试速记]]
-  > 把 Rails MVC、Migration、Model 和 Java Web 经验迁移讲顺的总入口
+  > Rails MVC、Active Record、Migration 与 Java Web 迁移表达的总入口
 
 - [[Rails RESTful Routing 面试速记]]
-  > REST 资源命名、`resources` / `resource` 和路由表达的专项速记
+  > REST 资源命名、`resources` / `resource` 和一对多子资源路由表达
 
 - [[Ruby基础语法面试速记]]
-  > 面试前快速过一遍 Ruby 语法、集合操作和常见表达差异
+  > 面试前快速过一遍 Ruby 语法、集合操作和与 Java 的类比说法
 
 - [[云平台经验面试表达]]
   > 把华为云项目经验迁移到主流云平台语境时的表达模板
@@ -172,8 +168,8 @@ category: interview
 | 整合笔记数 | 20+ |
 | 核心知识模块 | 4 |
 | 专题笔记 | 5（JVM/锁/HashMap/中间件/MVCC） |
-| 公司面试专区 | 3（华晟国康 / 运达 / Strikingly） |
-| 公司专项速记 | 6（复用件 / PostgreSQL / Ruby / Rails / 云平台 / 安全性） |
+| 公司面试专区 | 2（华晟国康 / 运达） |
+| 跨栈补充主题 | 6（PostgreSQL / Ruby / Rails / 云平台 / 安全性 / 转栈表达） |
 | Spaced Repetition 卡片 | 15+ |
 | 创建日期 | 2026-04-11 |
 | 最后更新 | 2026-07-05 |

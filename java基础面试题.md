@@ -1,7 +1,7 @@
 ---
 title: "java基础面试题"
 created: 2026-04-11
-updated: 2026-06-21
+updated: 2026-07-05
 tags:
   - 分类/java
   - 分类/面试
@@ -61,4 +61,3 @@ category: java
 
 - [[MOC-Java学习]]
 - [[MOC-Java面试]]
-- [[Strikingly中级后端工程师面试复习清单]]

@@ -1,7 +1,7 @@
 ---
 title: "java并发编程"
 created: 2026-04-11
-updated: 2026-06-21
+updated: 2026-07-05
 tags:
   - 分类/java
   - 分类/面试
@@ -13,7 +13,7 @@ category: concurrency
 
 # Java 并发编程
 
-> 这页作为并发主题的总入口，承接 `[[MOC-Java面试]]`、`[[Strikingly中级后端工程师面试复习清单]]` 等导航中的并发链接，避免落到空白页。
+> 这页作为并发主题的总入口，承接 `[[MOC-Java面试]]`、`[[MOC-Java学习]]` 等导航中的并发链接，避免落到空白页。
 
 ## 并发面试的主线
 
@@ -49,7 +49,6 @@ category: concurrency
 - 锁与底层原语：[[锁机制与并发原语]]
 - 集合与并发容器：[[HashMap与ConcurrentHashMap]]
 - JVM 与线上排查：[[JVM内存结构]]
-- 面试清单定位：[[Strikingly中级后端工程师面试复习清单]]
 - 总导航：[[MOC-Java面试]]
 
 ## 面试表达建议

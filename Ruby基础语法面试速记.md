@@ -1,10 +1,9 @@
 ---
 title: "Ruby基础语法面试速记"
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-05
 tags:
   - 分类/面试
-  - 公司/Strikingly
   - 主题/Ruby
   - 类型/索引
 status: seed
@@ -29,7 +28,7 @@ category: interview
 
 - Ruby 的 `hash` 可以先类比成 `Map`，但语法更灵活。
 - `symbol` 可以先理解成轻量、常用作标识符的不可变值，不要简单说成“就是字符串”。
-- block 可以先类比成“更轻量的代码块/闭包用法”，再根据追问展开。
+- block 可以先类比成“更轻量的代码块 / 闭包用法”，再根据追问展开。
 
 ## 面试表达建议
 
@@ -40,4 +39,4 @@ category: interview
 ## 关联
 
 - [[Ruby与Rails面试速记]]
-- [[Strikingly中级后端工程师面试复习清单]]
+- [[MOC-Java面试]]

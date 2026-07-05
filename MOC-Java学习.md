@@ -1,7 +1,7 @@
 ---
 title: "MOC-Java学习"
 created: 2026-04-11
-updated: 2026-06-21
+updated: 2026-07-05
 tags:
   - 类型/moc
   - 分类/java
@@ -155,5 +155,5 @@ category: java
 ## 🔗 关联 MOC
 
 - [[MOC-Java面试]] - 面试准备专用导航
-- [[Strikingly中级后端工程师面试复习清单]] - 当前岗位定向复习清单
+- [[Ruby与Rails面试速记]] - 跨语言后端迁移与 Rails 基础速记
 - [[运达面试专区]] - 运达公司面试速查入口
