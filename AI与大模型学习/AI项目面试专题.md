@@ -1,7 +1,7 @@
 ---
 title: "AI项目面试专题"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-07-26
 tags:
   - 分类/ai
   - 分类/面试
