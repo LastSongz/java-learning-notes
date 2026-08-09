@@ -1,7 +1,7 @@
 ---
 title: "Java服务云原生交付入门"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-08-09
 tags:
   - 分类/java
   - 主题/云原生
@@ -41,8 +41,23 @@ category: delivery
 
 - DevOps 导航：[[MOC-Harness与DevOps]]
 - 平台工具对比：[[Harness vs Jenkins对比]]
+- 平台概念总览：[[Harness是什么-企业CI-CD平台]]
+- 核心概念：[[Harness核心概念详解]]
 - Java 总导航：[[MOC-Java学习]]
 - AI / DevOps 交叉话题：[[定时任务驱动AI-Coding]]
+
+## 建议先挂回来的资料
+
+- 先用 [[Harness是什么-企业CI-CD平台]] 建立“从代码到部署”的平台全景。
+- 再看 [[Harness核心概念详解]]，把 Pipeline、Delegate、持续验证和 GitOps 这些词挂到交付链上。
+- 对比思路补到 [[Harness vs Jenkins对比]]，方便回答“为什么企业要从 Jenkins 迁移”。
+- 如果要把 AI Agent 放进交付链，可回看 [[定时任务驱动AI-Coding]] 里的 CI/CD 类比。
+
+## 建议的整理顺序
+
+1. 先把 Build -> Test -> Image -> Deploy -> Verify -> Rollback 讲顺。
+2. 再把 Docker / K8s / 探针 / 灰度发布这些运行时概念挂进去。
+3. 最后用 Harness / Jenkins 对比补上治理、审计、DORA 指标和回滚表达。
 
 ## 面试里建议怎么说
 
@@ -61,4 +76,4 @@ category: delivery
 
 - [[能力差距分析/高级Java开发工程师补强学习计划]]
 - [[MOC-Java学习]]
-- [[9 Harness与DevOps平台/MOC-Harness与DevOps]]
+- [[MOC-Harness与DevOps]]

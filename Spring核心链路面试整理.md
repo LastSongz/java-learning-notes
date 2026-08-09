@@ -1,7 +1,7 @@
 ---
 title: "Spring核心链路面试整理"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-08-09
 tags:
   - 分类/java
   - 主题/spring
@@ -41,8 +41,22 @@ category: spring
 
 - 框架原始材料：[[msb/核心框架源码常见问题（上）]]
 - 框架原始材料：[[msb/核心框架源码常见问题（下）]]
+- Java 基础总入口里对 Spring 高频题的归类：[[java基础面试题]]
 - 总导航：[[MOC-Java学习]]
 - 项目场景：[[简历面试备战/03-项目二-权限管理]]
+
+## 建议先挂回来的内容
+
+- BeanFactory / FactoryBean、Bean 生命周期、Aware / 后置处理器：[[msb/核心框架源码常见问题（下）]]
+- AOP、动态代理、通知类型和事务代理：[[msb/核心框架源码常见问题（上）]]
+- 自动装配、spring.factories、AutoConfigurationImportSelector：[[msb/核心框架源码常见问题（下）]]
+- 权限改造、拦截器、数据权限这类项目表达：[[简历面试备战/03-项目二-权限管理]]
+
+## 建议的整理顺序
+
+1. 先从 [[java基础面试题]] 和 msb 原始材料里抽出 Bean 生命周期、AOP、事务三条主线。
+2. 再把 Web 请求链路补到 Controller -> Service -> DAO -> MyBatis 的口述顺序。
+3. 最后把 [[简历面试备战/03-项目二-权限管理]] 里的权限场景挂回到拦截器、AOP、事务边界表达。
 
 ## 整理时的表达要求
 

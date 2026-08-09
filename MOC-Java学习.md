@@ -1,7 +1,7 @@
 ---
 title: "MOC-Java学习"
 created: 2026-04-11
-updated: 2026-07-19
+updated: 2026-08-09
 tags:
   - 类型/moc
   - 分类/java
@@ -69,22 +69,22 @@ category: java
 
 ### 生产级能力补强入口（🆕 seed）
 - [[Java网络与NIO专题]]
-  > 网络连接、NIO、Netty、SSE 与事件驱动主线
+  > 网络连接、NIO、Netty、SSE 与事件驱动主线，已补回 JVM / Redis / AI 流式案例入口
 
 - [[Spring核心链路面试整理]]
-  > Spring 容器、AOP、事务、MVC 与 MyBatis 的面试链路
+  > Spring 容器、AOP、事务、MVC 与 MyBatis 的面试链路，已挂回 `msb` 原始材料与权限项目场景
 
 - [[微服务稳定性治理专题]]
   > 超时、重试、熔断、降级、限流、隔离的治理视角
 
 - [[数据库工程化与连接池专题]]
-  > HikariCP、主从复制、读写分离、死锁与大表变更
+  > HikariCP、主从复制、读写分离、死锁与大表变更，已补主从/事务锁/执行计划资料入口
 
 - [[线上排障与可观测性专题]]
   > Logging、Metrics、Tracing 与 JVM / 慢接口排障方法
 
 - [[Java服务云原生交付入门]]
-  > Docker、K8s、发布策略与 Java 服务交付主线
+  > Docker、K8s、发布策略与 Java 服务交付主线，已补 Harness / Jenkins 导航入口
 
 - [[权限安全与工程质量专题]]
   > 权限边界、安全防护、测试治理与代码评审表达
@@ -170,7 +170,7 @@ category: java
 | 学习路径阶段 | 5 |
 | DevOps 工具笔记 | 4 |
 | 创建日期 | 2026-04-11 |
-| 最后更新 | 2026-07-19 |
+| 最后更新 | 2026-08-09 |
 
 ---
 
