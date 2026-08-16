@@ -1,7 +1,7 @@
 ---
 title: "AI大模型K8S集群架构面试题"
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-08-16
 tags:
   - 分类/ai
   - 分类/面试
@@ -196,4 +196,4 @@ K8S 节点上的 NVIDIA GPU 变 Offline，或者 Pod 报 `NVIDIA driver/library 
 
 ---
 
-**相关笔记**：[[05-K8S部署vLLM推理框架实践]] | [[12-微调技术LoRA与QLoRA]] | [[AI项目面试话术]]
+**相关笔记**：[[05-K8S部署vLLM推理框架实践]] | [[12-微调技术LoRA与QLoRA]] | [[21-AI项目面试话术|AI项目面试话术]]

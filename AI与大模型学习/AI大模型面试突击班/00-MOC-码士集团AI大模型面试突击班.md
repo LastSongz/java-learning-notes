@@ -1,7 +1,7 @@
 ---
 title: "MOC-码士集团AI大模型面试突击班"
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-08-16
 tags:
   - 类型/moc
   - 分类/ai
@@ -59,4 +59,4 @@ category: interview
 - [[10-AI Agent]]
 - [[12-微调技术LoRA与QLoRA]]
 - [[15-AI工作流]]
-- [[AI项目面试话术]]
+- [[21-AI项目面试话术|AI项目面试话术]]

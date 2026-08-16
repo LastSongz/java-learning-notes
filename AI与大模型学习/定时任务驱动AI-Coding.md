@@ -1,7 +1,7 @@
 ---
 title: "定时任务驱动 AI Coding"
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-08-16
 tags:
   - 类型/概念
   - 分类/ai
@@ -95,8 +95,8 @@ LinkedIn 上流传的极端案例：*"6 AI agents. 20 cron jobs. 0 human employe
 
 ### 4.1 Claude Code 生态（当前最主流）
 
-- **[[Claude Code] GitHub Actions](https://code.claude.com/docs/en/github-actions)** — 官方 Action，在 PR/issue 里 `@claude` 即可触发分析、审查、修 bug、实现功能
-- **[[Claude Code] Scheduled Tasks](https://code.claude.com/docs/en/scheduled-tasks)** — 官方 `/loop` 命令和定时任务，支持轮询状态、设置一次性提醒
+- **[Claude Code GitHub Actions](https://code.claude.com/docs/en/github-actions)** — 官方 Action，在 PR/issue 里 `@claude` 即可触发分析、审查、修 bug、实现功能
+- **[Claude Code Scheduled Tasks](https://code.claude.com/docs/en/scheduled-tasks)** — 官方 `/loop` 命令和定时任务，支持轮询状态、设置一次性提醒
 - **Claude Code Routines（2026.04）** — 官方重头戏，定位 "cron for agents"，GitHub 原生触发 + API 调用 + 终端能力
 - **[anthropics/claude-quickstarts — Autonomous Coding Agent](https://github.com/anthropics/claude-quickstarts)** — 官方双 Agent 模式示例（initializer + coding agent），跑长时自治任务
 - **[kylemclaren/claude-tasks](https://github.com/kylemclaren/claude-tasks)** — 社区"Cron Claude Code"项目
