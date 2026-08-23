@@ -1,7 +1,7 @@
 ---
 title: "MOC-AI与大模型学习"
 created: 2026-05-19
-updated: 2026-07-26
+updated: 2026-08-23
 tags:
   - 类型/moc
   - 分类/ai
@@ -62,6 +62,7 @@ category: ai
 |------|------|------|
 | [[MOC-LangChain学习]] | ✅ 已整理 | LangChain / LangGraph 学习主线、Agent 记忆与 RAG 实战导航 |
 | [[LC-Demo手敲指南-Java与Python]] | ✅ 已整理 | 配套示例、命令行演示与 Java / Python 对照练习 |
+| [[求职准备-大模型应用开发工程师]] | ✅ 已完成 | 大模型应用开发岗位的能力模型与学习优先级 |
 
 #### 🆕 前沿趋势
 | 主题 | 状态 | 说明 |

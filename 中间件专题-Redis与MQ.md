@@ -1,7 +1,7 @@
 ---
 title: "中间件专题：Redis 与 MQ"
 created: 2026-04-11
-updated: 2026-05-19
+updated: 2026-08-23
 tags:
   - 主题/redis
   - 主题/mq
@@ -1233,4 +1233,6 @@ mqadmin topicRoute -n localhost:9876 -t my-topic
 
 - [[简历知识点总结]]
 - [[运达面试专区]]
-- [[MV
+- [[MVCC多版本并发控制]]
+- MQ 突击班原始材料：[[6 MQ与其他中间件高频面试题2]]
+- 一致性 hash 与分布式缓存：[[附录：一致性hash原理]]

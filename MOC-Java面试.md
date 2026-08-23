@@ -1,7 +1,7 @@
 ---
 title: "MOC-Java面试"
 created: 2026-04-11
-updated: 2026-07-05
+updated: 2026-08-23
 tags:
   - 类型/moc
   - 分类/java
@@ -107,6 +107,11 @@ category: interview
 
 - [[面试提示词]]
   > AI 模拟面试提示词，可按公司和题型切换训练
+
+- 主题闪卡（#flashcards，Spaced Repetition 插件格式）
+  - [[闪卡-JVM]]、[[闪卡-并发编程]]
+  - [[闪卡-数据库]]、[[闪卡-中间件]]
+  - [[闪卡-面试高频]]、[[闪卡-AI与大模型]]
 
 ---
 
