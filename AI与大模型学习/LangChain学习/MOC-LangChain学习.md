@@ -22,6 +22,8 @@ category: langchain
 
 配套手敲练习见：[[LC-Demo手敲指南-Java与Python]]
 
+阶段复盘与压缩上下文见：[[LC-阶段复盘与上下文压缩]]
+
 ## 前置知识
 
 | 主题 | 说明 |
