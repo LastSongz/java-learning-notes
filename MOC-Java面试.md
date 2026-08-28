@@ -1,7 +1,7 @@
 ---
 title: "MOC-Java面试"
 created: 2026-04-11
-updated: 2026-08-23
+updated: 2026-08-28
 tags:
   - 类型/moc
   - 分类/java
@@ -108,6 +108,9 @@ category: interview
 - [[面试提示词]]
   > AI 模拟面试提示词，可按公司和题型切换训练
 
+- [[面试要点]]
+  > 自我介绍定稿、外部面试流程经验与动机表达整理
+
 - 主题闪卡（#flashcards，Spaced Repetition 插件格式）
   - [[闪卡-JVM]]、[[闪卡-并发编程]]
   - [[闪卡-数据库]]、[[闪卡-中间件]]
@@ -177,7 +180,7 @@ category: interview
 | 跨栈补充主题 | 6（PostgreSQL / Ruby / Rails / 云平台 / 安全性 / 转栈表达） |
 | Spaced Repetition 卡片 | 15+ |
 | 创建日期 | 2026-04-11 |
-| 最后更新 | 2026-07-05 |
+| 最后更新 | 2026-08-28 |
 
 ---
 
