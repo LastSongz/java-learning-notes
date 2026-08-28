@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-08-28T15:29:08.249Z",
+  "sessionId": "sess_fbc28042-f4f9-47d1-a95c-4b530ae3fc45",
+  "event": "PostToolUse",
+  "toolName": "Edit",
+  "file": "MOC-Java面试.md",
+  "outcome": "clear",
+  "coverage": "complete",
+  "findingCount": 0,
+  "durationMs": 5,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}
